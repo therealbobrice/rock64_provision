@@ -6,7 +6,7 @@ from datetime import datetime
 from RPLCD.i2c import CharLCD
 import socket
 #lcd = CharLCD('PCF8574', 0x3f, auto_linebreaks=False)
-lcd = CharLCD('PCF8574', 0x27, auto_linebreaks=False)
+lcd = CharLCD('PCF8574', LCD_ADDRESS, auto_linebreaks=False)
 lcd.clear()
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
