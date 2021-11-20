@@ -9,7 +9,7 @@ sudo apt install python3-smbus
 
 # Regenerate the SSH keys for good measure
 echo "Regenerating SSH keys"
-dpkg-reconfigure openssh-server
+sudo dpkg-reconfigure openssh-server
 
 # Enable i2c manually using armbian-config
 echo "You must manually enable i2c7 and i2c8..."
