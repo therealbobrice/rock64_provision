@@ -2,10 +2,10 @@
 
 # Run apt updates and installs
 echo "Running apt updates and installs..."
-sudo apt update && sudo apt upgrade
-sudo apt install python3-pip
+sudo apt update && sudo apt upgrade -y
+sudo apt install -y python3-pip
 sudo pip3 install RPLCD
-sudo apt install python3-smbus
+sudo apt install -y python3-smbus
 
 # Regenerate the SSH keys for good measure
 echo "Regenerating SSH keys"
